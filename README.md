@@ -9,3 +9,4 @@
    devel install assign_helix
    devel install save_curve 
    ```
+3. Draw binder or assign SSE with Right Mouse
