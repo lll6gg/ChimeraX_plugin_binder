@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ChimeraX-AssignLoop
+Version: 2.0.4
+Summary: Draw binder support
+Home-page: https://www.rbvi.ucsf.edu/chimerax/
+Author: UCSF RBVI
+Author-email: chimerax@cgl.ucsf.edu
+Classifier: Framework :: ChimeraX
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: Free for non-commercial use
+Classifier: Environment :: MacOS X :: Aqua
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: ChimeraX :: Bundle :: Structure Editing :: 1,1 :: chimerax.assign_loop ::  :: true
+Classifier: ChimeraX :: Tool :: Assign Loop :: Depiction :: Assign Loop
+Requires-Python: >=3.7
+Requires-Dist: ChimeraX-Core~=1.0
+Requires-Dist: ChimeraX-Geometry~=1.0
+Requires-Dist: ChimeraX-MouseModes~=1.0
+Requires-Dist: ChimeraX-UI~=1.0
+
+Draw binder support

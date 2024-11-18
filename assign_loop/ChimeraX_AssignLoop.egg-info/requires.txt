@@ -1,0 +1,4 @@
+ChimeraX-Core~=1.0
+ChimeraX-Geometry~=1.0
+ChimeraX-MouseModes~=1.0
+ChimeraX-UI~=1.0

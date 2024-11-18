@@ -1,0 +1,41 @@
+<BundleInfo name="ChimeraX-AssignLoop" version="2.0.4" package="chimerax.assign_loop"
+  	    customInit="true" minSessionVersion="1" maxSessionVersion="1">
+
+  <!-- Additional information about bundle source -->
+  <Author>UCSF RBVI</Author>
+  <Email>chimerax@cgl.ucsf.edu</Email>
+  <URL>https://www.rbvi.ucsf.edu/chimerax/</URL>
+
+  <!-- Synopsis is a one-line description
+       Description is a full multi-line description -->
+  <Synopsis>Draw binder support</Synopsis>
+  <Description>Draw binder support</Description>
+
+  <DataFiles>
+    <DataFile>assign_loop.png</DataFile>
+  </DataFiles>
+
+  <!-- Categories is a list where this bundle should appear -->
+  <Categories>
+    <Category name="Structure Editing"/>
+  </Categories>
+
+  <!-- Dependencies on other ChimeraX/Python packages -->
+  <Dependencies>
+    <Dependency name="ChimeraX-Core" version="~=1.0"/>
+    <Dependency name="ChimeraX-Geometry" version="~=1.0"/>
+    <Dependency name="ChimeraX-MouseModes" version="~=1.0"/>
+    <Dependency name="ChimeraX-UI" version="~=1.0"/>
+  </Dependencies>
+<!-- <Providers manager="toolbar">
+  <Provider tab="Right Mouse" section="Structure Modification" name="ms4"
+    mouse_mode="draw binder" display_name="Draw Binder" description="Draw Binder" after="Tug"/>
+</Providers> -->
+  <Classifiers>
+    <!-- Development Status should be compatible with bundle version number -->
+    <PythonClassifier>Development Status :: 2 - Pre-Alpha</PythonClassifier>
+    <PythonClassifier>License :: Free for non-commercial use</PythonClassifier>
+    <ChimeraXClassifier>Tool :: Assign Loop :: Depiction :: Assign Loop</ChimeraXClassifier>
+  </Classifiers>
+
+</BundleInfo>

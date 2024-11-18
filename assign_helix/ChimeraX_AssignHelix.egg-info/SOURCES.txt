@@ -1,0 +1,11 @@
+ChimeraX_AssignHelix.egg-info/PKG-INFO
+ChimeraX_AssignHelix.egg-info/SOURCES.txt
+ChimeraX_AssignHelix.egg-info/dependency_links.txt
+ChimeraX_AssignHelix.egg-info/requires.txt
+ChimeraX_AssignHelix.egg-info/top_level.txt
+src/__init__.py
+src/assign_helix.png
+src/assign_helix.py
+src/bond_rot.py
+src/cmd.py
+src/manager.py

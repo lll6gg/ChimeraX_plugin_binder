@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: ChimeraX-Toolbar
+Version: 1.1.2
+Summary: Toolbar
+Home-page: https://www.rbvi.ucsf.edu/chimerax/
+Author: UCSF RBVI
+Author-email: chimerax@cgl.ucsf.edu
+Classifier: Framework :: ChimeraX
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: Free for non-commercial use
+Classifier: Environment :: MacOS X :: Aqua
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: ChimeraX :: Bundle :: General :: 1,1 :: chimerax.toolbar ::  :: 
+Classifier: ChimeraX :: Manager :: toolbar :: guiOnly:true
+Classifier: ChimeraX :: Provider :: Open :: toolbar :: tab:Extras :: section:File :: hidden:true :: icon:open-in-app.png :: description:"Open data file"
+Classifier: ChimeraX :: Provider :: Recent :: toolbar :: tab:Extras :: section:File :: hidden:true :: icon:recentfiles.png :: description:"Open recent files" :: after:Open
+Classifier: ChimeraX :: Provider :: Save :: toolbar :: tab:Extras :: section:File :: hidden:true :: icon:content-save.png :: description:"Save session file" :: after:Recent
+Classifier: ChimeraX :: Provider :: Close :: toolbar :: tab:Extras :: section:File :: hidden:true :: icon:close-box.png :: description:"Close current session" :: after:Save
+Classifier: ChimeraX :: Provider :: Exit :: toolbar :: tab:Extras :: section:File :: hidden:true :: icon:exit.png :: description:"Exit application" :: after:Close
+Classifier: ChimeraX :: Provider :: Undo :: toolbar :: tab:Extras :: section:Undo :: hidden:true :: icon:undo-variant.png :: description:"Undo last action"
+Classifier: ChimeraX :: Provider :: Redo :: toolbar :: tab:Extras :: section:Undo :: hidden:true :: icon:redo-variant.png :: description:"Redo last action"
+Classifier: ChimeraX :: Provider :: tab-md :: toolbar :: tab:"Molecule Display" :: help:help:user/tools/moldisplay.html
+Classifier: ChimeraX :: Provider :: layout-atoms :: toolbar :: tab:"Molecule Display" :: section:Atoms :: compact:true
+Classifier: ChimeraX :: Provider :: layout-cartoons :: toolbar :: tab:"Molecule Display" :: section:Cartoons :: compact:true :: after:Atoms
+Classifier: ChimeraX :: Provider :: layout-surfaces :: toolbar :: tab:"Molecule Display" :: section:Surfaces :: compact:true :: after:Cartoons
+Classifier: ChimeraX :: Provider :: layout-styles :: toolbar :: tab:"Molecule Display" :: section:Styles :: after:Surfaces
+Classifier: ChimeraX :: Provider :: layout-coloring :: toolbar :: tab:"Molecule Display" :: section:Coloring :: after:Styles
+Classifier: ChimeraX :: Provider :: layout-analysis :: toolbar :: tab:"Molecule Display" :: section:Analysis :: after:Coloring
+Classifier: ChimeraX :: Provider :: tab-g :: toolbar :: tab:Graphics :: after:"Molecule Display" :: help:help:user/tools/graphics.html
+Classifier: ChimeraX :: Provider :: layout-bg :: toolbar :: tab:Graphics :: section:Background :: compact:true
+Classifier: ChimeraX :: Provider :: layout-lighting :: toolbar :: tab:Graphics :: section:"Lighting & Effects" :: after:Background
+Classifier: ChimeraX :: Provider :: layout-cam :: toolbar :: tab:Graphics :: section:Camera :: after:"Lighting & Effects"
+Classifier: ChimeraX :: Provider :: Side view :: toolbar :: tab:Graphics :: section:Camera :: icon:sideview.png :: description:"Show side view tool"
+Classifier: ChimeraX :: Provider :: tab-map :: toolbar :: tab:Map :: after:Graphics :: help:help:user/tools/densitymaps.html
+Classifier: ChimeraX :: Provider :: layout-map-style :: toolbar :: tab:Map :: section:Style :: after:Map
+Classifier: ChimeraX :: Provider :: layout-map-steps :: toolbar :: tab:Map :: section:Steps :: after:Style
+Classifier: ChimeraX :: Provider :: layout-map-subregions :: toolbar :: tab:Map :: section:Subregions :: after:Steps
+Classifier: ChimeraX :: Provider :: layout-map-image-display :: toolbar :: tab:Map :: section:Appearance :: after:Subregions
+Classifier: ChimeraX :: Provider :: layout-map-calculations :: toolbar :: tab:Map :: section:Calculations :: after:Appearance
+Classifier: ChimeraX :: Provider :: tab-markers :: toolbar :: tab:Markers :: after:Map :: help:help:user/tools/markerplacement.html
+Classifier: ChimeraX :: Provider :: layout-markers-place :: toolbar :: tab:Markers :: section:"Place markers"
+Classifier: ChimeraX :: Provider :: pm1 :: toolbar :: tab:Markers :: section:"Place markers" :: mouse_mode:"mark maximum" :: display_name:Maximum :: description:"Mark maximum"
+Classifier: ChimeraX :: Provider :: pm2 :: toolbar :: tab:Markers :: section:"Place markers" :: mouse_mode:"mark plane" :: display_name:Plane :: description:"Mark volume plane" :: after:Maximum
+Classifier: ChimeraX :: Provider :: pm3 :: toolbar :: tab:Markers :: section:"Place markers" :: mouse_mode:"mark surface" :: display_name:Surface :: description:"Mark surface" :: after:Plane
+Classifier: ChimeraX :: Provider :: pm4 :: toolbar :: tab:Markers :: section:"Place markers" :: mouse_mode:"mark center" :: display_name:Center :: description:"Mark center of connected surface" :: after:Surface
+Classifier: ChimeraX :: Provider :: pm5 :: toolbar :: tab:Markers :: section:"Place markers" :: mouse_mode:"mark point" :: display_name:Point :: description:"Mark 3d point" :: after:Center
+Classifier: ChimeraX :: Provider :: layout-markers-adjust :: toolbar :: tab:Markers :: section:"Adjust markers" :: after:"Place markers"
+Classifier: ChimeraX :: Provider :: am1 :: toolbar :: tab:Markers :: section:"Adjust markers" :: mouse_mode:"link markers" :: display_name:Link :: description:"Link consecutively clicked markers"
+Classifier: ChimeraX :: Provider :: am2 :: toolbar :: tab:Markers :: section:"Adjust markers" :: mouse_mode:"move markers" :: display_name:Move :: description:"Move markers" :: after:Link
+Classifier: ChimeraX :: Provider :: am3 :: toolbar :: tab:Markers :: section:"Adjust markers" :: mouse_mode:"resize markers" :: display_name:Resize :: description:"Resize markers or links" :: after:Move
+Classifier: ChimeraX :: Provider :: am4 :: toolbar :: tab:Markers :: section:"Adjust markers" :: mouse_mode:"delete markers" :: display_name:Delete :: description:"Delete markers or links" :: after:Resize
+Classifier: ChimeraX :: Provider :: tab-right-mouse :: toolbar :: tab:"Right Mouse" :: after:Markers :: help:help:user/tools/mousemodes.html
+Classifier: ChimeraX :: Provider :: layout-mouse-movement :: toolbar :: tab:"Right Mouse" :: section:Movement
+Classifier: ChimeraX :: Provider :: mm1 :: toolbar :: tab:"Right Mouse" :: section:Movement :: mouse_mode:select :: display_name:Select :: description:"Select models"
+Classifier: ChimeraX :: Provider :: mm2 :: toolbar :: tab:"Right Mouse" :: section:Movement :: mouse_mode:rotate :: display_name:Rotate :: description:"Rotate models" :: after:Select
+Classifier: ChimeraX :: Provider :: mm3 :: toolbar :: tab:"Right Mouse" :: section:Movement :: mouse_mode:translate :: display_name:Translate :: description:"Translate models" :: after:Rotate
+Classifier: ChimeraX :: Provider :: mm4 :: toolbar :: tab:"Right Mouse" :: section:Movement :: mouse_mode:zoom :: display_name:Zoom :: description:"Zoom view" :: after:Translate
+Classifier: ChimeraX :: Provider :: mm5 :: toolbar :: tab:"Right Mouse" :: section:Movement :: mouse_mode:"translate selected models" :: display_name:"Move model" :: description:"Translate selected models, hold shift key to rotate" :: after:Zoom
+Classifier: ChimeraX :: Provider :: mm6 :: toolbar :: tab:"Right Mouse" :: section:Movement :: mouse_mode:"rotate selected models" :: display_name:"Rotate model" :: description:"Rotate selected models, hold shift key to translate" :: after:"Move model"
+Classifier: ChimeraX :: Provider :: mm6a :: toolbar :: tab:"Right Mouse" :: section:Movement :: mouse_mode:"move picked models" :: display_name:"Drag model" :: description:"Move clicked-on models, hold shift key to rotate" :: after:"Rotate model"
+Classifier: ChimeraX :: Provider :: mm7 :: toolbar :: tab:"Right Mouse" :: section:Movement :: mouse_mode:"translate selected atoms" :: display_name:"Move atoms" :: description:"Translate selected atoms, hold shift key to rotate" :: after:"Drag model"
+Classifier: ChimeraX :: Provider :: mm8 :: toolbar :: tab:"Right Mouse" :: section:Movement :: hidden:true :: mouse_mode:"rotate selected atoms" :: display_name:"Rotate atoms" :: description:"Rotate selected atoms, hold shift key to translate" :: after:"Move atoms"
+Classifier: ChimeraX :: Provider :: mm9 :: toolbar :: tab:"Right Mouse" :: section:Movement :: mouse_mode:pivot :: display_name:Pivot :: description:"Set center of rotation at atom" :: after:"Rotate atoms"
+Classifier: ChimeraX :: Provider :: layout-mouse-annotation :: toolbar :: tab:"Right Mouse" :: section:Annotation :: after:Movement
+Classifier: ChimeraX :: Provider :: ma1 :: toolbar :: tab:"Right Mouse" :: section:Annotation :: mouse_mode:distance :: display_name:Distance :: description:"Toggle distance monitor between two atoms"
+Classifier: ChimeraX :: Provider :: ma2 :: toolbar :: tab:"Right Mouse" :: section:Annotation :: mouse_mode:label :: display_name:Label :: description:"Toggle atom or cartoon label" :: after:Distance
+Classifier: ChimeraX :: Provider :: ma3 :: toolbar :: tab:"Right Mouse" :: section:Annotation :: mouse_mode:"move label" :: display_name:"Move label" :: description:"Reposition 2D label" :: after:Label
+Classifier: ChimeraX :: Provider :: layout-mouse-clipping :: toolbar :: tab:"Right Mouse" :: section:Clipping :: after:Annotation
+Classifier: ChimeraX :: Provider :: mc1 :: toolbar :: tab:"Right Mouse" :: section:Clipping :: mouse_mode:clip :: display_name:Clip :: description:"Activate clipping"
+Classifier: ChimeraX :: Provider :: mc2 :: toolbar :: tab:"Right Mouse" :: section:Clipping :: mouse_mode:"clip rotate" :: display_name:"Clip rotate" :: description:"Rotate clipping planes" :: after:Clip
+Classifier: ChimeraX :: Provider :: mc3 :: toolbar :: tab:"Right Mouse" :: section:Clipping :: mouse_mode:zone :: display_name:Zone :: description:"Limit display to zone around clicked residues" :: after:"Clip rotate"
+Classifier: ChimeraX :: Provider :: layout-mouse-map :: toolbar :: tab:"Right Mouse" :: section:Map :: after:Clipping
+Classifier: ChimeraX :: Provider :: mM1 :: toolbar :: tab:"Right Mouse" :: section:Map :: mouse_mode:"contour level" :: display_name:"Contour level" :: description:"Adjust volume data threshold level"
+Classifier: ChimeraX :: Provider :: mM2 :: toolbar :: tab:"Right Mouse" :: section:Map :: mouse_mode:"move planes" :: display_name:"Move planes" :: description:"Move plane or slab along its axis to show a different section" :: after:"Contour level"
+Classifier: ChimeraX :: Provider :: mM3 :: toolbar :: tab:"Right Mouse" :: section:Map :: mouse_mode:"rotate slab" :: display_name:"Rotate slab" :: description:"Tilt volume planes, hold shift key to translate" :: after:"Move planes"
+Classifier: ChimeraX :: Provider :: mM4 :: toolbar :: tab:"Right Mouse" :: section:Map :: mouse_mode:"crop volume" :: display_name:Crop :: description:"Crop volume data dragging any face of box outline" :: after:"Rotate slab"
+Classifier: ChimeraX :: Provider :: mM5 :: toolbar :: tab:"Right Mouse" :: section:Map :: mouse_mode:"tape measure" :: display_name:Tape :: description:"Measure distance between two map points" :: after:Crop
+Classifier: ChimeraX :: Provider :: mM6 :: toolbar :: tab:"Right Mouse" :: section:Map :: mouse_mode:"pick blobs" :: display_name:Blob :: description:"Measure and color connected parts of surface" :: after:Tape
+Classifier: ChimeraX :: Provider :: mM7 :: toolbar :: tab:"Right Mouse" :: section:Map :: mouse_mode:"map eraser" :: display_name:Erase :: description:"Erase parts of a density map setting values in a sphere to zero" :: after:Blob
+Classifier: ChimeraX :: Provider :: mM8 :: toolbar :: tab:"Right Mouse" :: section:Map :: mouse_mode:"play map series" :: display_name:"Play series" :: description:"Play map series" :: after:Erase
+Classifier: ChimeraX :: Provider :: mM9 :: toolbar :: tab:"Right Mouse" :: section:Map :: mouse_mode:windowing :: display_name:Windowing :: description:"Adjust volume data thresholds collectively" :: after:"Play series"
+Classifier: ChimeraX :: Provider :: layout-mouse-structure :: toolbar :: tab:"Right Mouse" :: section:"Structure Modification" :: after:Map
+Classifier: ChimeraX :: Provider :: ms1 :: toolbar :: tab:"Right Mouse" :: section:"Structure Modification" :: mouse_mode:"draw binder" :: display_name:"Draw Binder" :: description:"Draw Binder"
+Classifier: ChimeraX :: Provider :: ms2 :: toolbar :: tab:"Right Mouse" :: section:"Structure Modification" :: mouse_mode:"assign loop" :: display_name:"Assign Loop" :: description:"Assign Marker Loop" :: after:"Draw Binder"
+Classifier: ChimeraX :: Provider :: ms3 :: toolbar :: tab:"Right Mouse" :: section:"Structure Modification" :: mouse_mode:"assign helix" :: display_name:"Assign Helix" :: description:"Assign Marker Helix" :: after:"Assign Loop"
+Classifier: ChimeraX :: Provider :: ms4 :: toolbar :: tab:"Right Mouse" :: section:"Structure Modification" :: mouse_mode:"save curve" :: display_name:Save :: description:"Save Curve" :: after:"Assign Helix"
+Classifier: ChimeraX :: Tool :: Toolbar :: General :: a Windows ribbon-style toolbar
+Requires-Python: >=3.7
+Requires-Dist: ChimeraX-Core~=1.2
+Requires-Dist: ChimeraX-UI>=1.18.2,~=1.0
+Requires-Dist: ChimeraX-Shortcuts~=1.0
+Requires-Dist: ChimeraX-SelInspector~=1.0
+Requires-Dist: ChimeraX-MouseModes~=1.1
+Requires-Dist: ChimeraX-BondRot~=2.0
+Requires-Dist: ChimeraX-StructMeasure~=1.0
+Requires-Dist: ChimeraX-Label~=1.0
+Requires-Dist: ChimeraX-Map~=1.0
+Requires-Dist: ChimeraX-Markers~=1.0
+Requires-Dist: ChimeraX-Label~=1.0
+Requires-Dist: ChimeraX-Tug~=1.0
+Requires-Dist: ChimeraX-Zone~=1.0
+
+Tabbed Toolbar
+
+Provides a Windows ribbon-style toolbar interface

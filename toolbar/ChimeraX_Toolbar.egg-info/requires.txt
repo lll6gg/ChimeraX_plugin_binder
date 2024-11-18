@@ -1,0 +1,13 @@
+ChimeraX-Core~=1.2
+ChimeraX-UI>=1.18.2,~=1.0
+ChimeraX-Shortcuts~=1.0
+ChimeraX-SelInspector~=1.0
+ChimeraX-MouseModes~=1.1
+ChimeraX-BondRot~=2.0
+ChimeraX-StructMeasure~=1.0
+ChimeraX-Label~=1.0
+ChimeraX-Map~=1.0
+ChimeraX-Markers~=1.0
+ChimeraX-Label~=1.0
+ChimeraX-Tug~=1.0
+ChimeraX-Zone~=1.0

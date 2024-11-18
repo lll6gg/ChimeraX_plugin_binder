@@ -1,0 +1,9 @@
+ChimeraX_AssignLoop.egg-info/PKG-INFO
+ChimeraX_AssignLoop.egg-info/SOURCES.txt
+ChimeraX_AssignLoop.egg-info/dependency_links.txt
+ChimeraX_AssignLoop.egg-info/requires.txt
+ChimeraX_AssignLoop.egg-info/top_level.txt
+src/__init__.py
+src/cmd.py
+src/manager.py
+src/save_curve.py
